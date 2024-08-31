@@ -1,0 +1,272 @@
+nav{
+    background-color: rgb(12, 11, 11) !important;
+    padding: 16px 16px 16px 16px;
+    border-bottom: .5px solid rgba(255, 255, 255, 0.039);
+  }
+
+.navbar-brand{
+    margin-left: 3%;
+}
+
+.container{
+    margin-top: 3rem;
+}
+
+.navbar-light .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.593); /* Force text color to white */
+}
+
+.my-line{
+    font-size:4rem;
+    line-height:1;
+    width:60%;
+    margin:0 auto;
+    font-weight: 500;
+}
+
+.my-para{
+    font-size:2rem;
+    line-height:1;
+    width:50%;
+    margin:1rem auto 0 auto;
+    font-weight: 100;
+    color: rgba(240, 248, 255, 0.411);
+}
+
+.my-flicke{
+    margin:.7rem auto 0 auto;
+    color: rgba(240, 248, 255, 0.411);
+}
+
+li{
+    padding-left: 5%;
+}
+
+.navbar-toggler{
+    padding: 0.2rem 0.5rem; /* Reduce the padding */
+    font-size: 1rem; /* Reduce the icon size */
+}
+
+
+.navbar-toggler-icon {
+    width: 2.2rem; /* Adjust width of the icon */
+    height: 1.4rem; /* Adjust height of the icon */
+}
+
+.navbar-brand img {
+    width: 120px; /* Increase the width of the logo */
+    height: 40px; /* Increase the height of the logo */
+}
+
+.navbar-nav .nav-item.active a:hover {
+    color: white !important; /* Change this color to your preferred hover color */
+}
+
+/* Toggle Starts Here */
+.switch {
+    width: 60px;
+    height: 35px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+  }
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background: rgb(145, 145, 145);
+    border-radius: 25px;
+  }
+  .switch .slider::before {
+    content: "";
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    left: 5px;
+    top: 4px;
+    background: white;
+    transition: 0.5s all;
+    border-radius: 50%;
+  }
+
+  .switch input {
+    display: none;
+  }
+
+  .switch input:checked + .slider {
+    background: rgb(123, 3, 125);
+  }
+
+  .switch input:checked + .slider::before {
+    transform: translateX(23px);
+  }
+
+  .toggleWrapper{
+    margin:1rem auto 0 auto;
+  }
+
+  /* Toggle ends here */
+
+  .custom-box {
+    width: 90%;          /* Width of the box */
+    height: 20em;         /* Height of the box */
+    background-color: #202020;  /* Background color of the box */
+    border: 1px solid #cccccc0e;     /* Border around the box */
+    border-radius: 10px;        /* Rounded corners */
+    padding: 20px;              /* Padding inside the box */
+    margin: 20px auto;          /* Center the box with margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  }
+
+  .customised-box {
+    width: 90%;          /* Width of the box */
+    height: 15em;         /* Height of the box */
+    background-color: #202020;  /* Background color of the box */
+    border: 1px solid #cccccc0e;     /* Border around the box */
+    border-radius: 10px;        /* Rounded corners */
+    padding: 20px;              /* Padding inside the box */
+    margin: 0px auto 20px auto;          /* Center the box with margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  }
+
+@media (max-width: 991.98px) {
+
+    .container{
+        margin-top: 2rem;
+    }
+
+    .navbar-nav .nav-item a{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.088);
+    }
+    .navbar-nav .nav-item.active a{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.088);
+    }
+
+    .my-line{
+        font-size:1.8rem;
+        width:90%;
+        line-height: 2.2rem;
+    }
+
+    .my-para{
+        font-size:1.3rem;
+        width:70%;
+        line-height: 1.6rem;
+    }
+
+    .my-flicke{
+        font-size:.8rem;
+        width:50%;
+        font-weight: 500;
+        line-height: 1.6rem;
+    }
+
+    pre{
+        margin: 0;
+        padding: 0;
+        /* white-space: pre-wrap;  */
+        display: block;
+        white-space: pre-line;
+    }
+
+
+}
+
+pre {
+    background-color: #f5f5f500;
+    color:#ffffff;
+    overflow: hidden;
+  }
+  
+  code span{
+    color: #d63384;
+  }
+
+
+.navbar-nav .nav-item a:hover {
+    color: white !important; /* Change this color to your preferred hover color */
+}
+
+.connect::before,
+.connect::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  line-height: 10px;
+  border-radius: 5px;
+  background: rgb(238, 0, 255);
+  margin: 0;
+  display: inline-block;
+  position: absolute;
+  top: -4px;
+}
+
+.connect::before {
+  left: -5px;
+}
+
+.connect::after {
+  right: -5px;
+}
+
+.connect {
+  width: 150px;
+  height: 2px;
+  background: darkGray;
+  position: relative;
+}
+
+body {
+  padding: 100px;
+}
+
+/* Connector Line */
+
+.connector{
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center children horizontally */
+    /* padding: 100px; */
+}
+
+.custom-box {
+    margin-bottom: 0; /* Remove the space below the custom box */
+    position: relative; /* For relative positioning of pseudo-elements */
+  }
+
+  .connect {
+    width: 2px;
+    height: 40px;
+    background: darkGray;
+    position: relative;
+  }
+  
+  /* Adjust positioning of circles */
+  .connect::before,
+  .connect::after {
+    content: '';
+    width: 10px;
+    height: px;
+    text-align: center;
+    line-height: 10px;
+    border-radius: 5px;
+    background: rgba(238, 0, 255, 0.765);
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+    left: -4px;
+  }
+  
+  .connect::before {
+    top: -5px; /* Position at the top of the connect line */
+  }
+  
+  .connect::after {
+    bottom: -5px; /* Position at the bottom of the connect line */
+  }
+  
